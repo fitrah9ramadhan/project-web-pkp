@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'HalamanUtama::index');
 $routes->get('/berita/(:segment)', 'Berita::detail/$1');
 $routes->get('/adminlogin/login', 'Admin::index');
+$routes->get('/adminlogin/logout', 'HalamanUtama::index');
 
 
 
