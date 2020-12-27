@@ -2,6 +2,11 @@
 
 <?php echo $this->section('content'); ?>
 
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid">
 
 	<h1>Kecamatan Balocci</h1>
 	<h2>Kabupaten Pangkajene dan Kepulauan</h2>
@@ -14,5 +19,5 @@
 		</tr>
 		<?php endforeach; ?>
 	</table>
-
+</div>
 <?php echo $this->endSection(); ?>
