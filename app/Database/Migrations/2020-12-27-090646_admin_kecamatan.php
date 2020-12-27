@@ -2,9 +2,9 @@
 
 use CodeIgniter\Database\Migration;
 
-class PetunjukLayanan extends Migration
+class AdminKecamatan extends Migration
 {
-        public function up()
+public function up()
         {
                 $this->forge->addField([
                         'id'          => [
@@ -13,29 +13,24 @@ class PetunjukLayanan extends Migration
                                 'unsigned'       => true,
                                 'auto_increment' => true,
                         ],
-                        'nama_layanan'       => [
+                        'nama'       => [
                                 'type'           => 'VARCHAR',
                                 'constraint'     => 255,
                         ],
-                        'link' => [
+                        'username' => [
                                 'type'           => 'VARCHAR',
                                 'constraint'     => 255,
                         ],
-                        'created_at' => [
-                        	'type' => 'DATETIME',
-                        	'null' => true,
-                        ],
-                        'updated_at' => [
-                        	'type' => 'DATETIME',
-                        	'null' => true,
+                        'password' => [
+                        	'type' => 'VARCHAR',
+                        	'constraint'     => 255
                         ]
                 ]);
                 $this->forge->addKey('id', true);
-                $this->forge->createTable('layanan_kecamatan');
+                $this->forge->createTable('admin_kecamatan');
         }
-
-        public function down()
+public function down()
         {
-                $this->forge->dropTable('layanan_kecamatan');
+                $this->forge->dropTable('admin_kecamatan');
         }
 }
