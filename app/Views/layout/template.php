@@ -26,7 +26,7 @@
           Profil Kecamatan
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Gambaran Umum</a>
+          <a class="dropdown-item" href="#">Gambaran Umum kecamatan Balocci</a>
           <a class="dropdown-item" href="#">Sejarah Kecamatan</a>
           <a class="dropdown-item" href="#">Visi & Misi</a>
         </div>
