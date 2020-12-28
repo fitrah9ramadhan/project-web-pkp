@@ -9,7 +9,7 @@ class profil_kecamatanSeeder extends \CodeIgniter\Database\Seeder
 
                         'sejarah_kecamatan' => 'Sejarah Kecamatan Balocci',
                         'gambaran_umum'    => 'gambaran umum kecamatan balocci',
-                        'visi_misi' => 'visi dan misi kecamatan balocci'
+                        'peta' => 'gambar peta'
                 ];
 
                 // Using Query Builder

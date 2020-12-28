@@ -15,4 +15,31 @@ class Profil extends BaseController
 
 		return view('profil_kecamatan/index', $data);
 	}
+
+	public function gambaran_umum(){
+		$data = [
+			'title' => 'Gambaran Umum | Kecamatan Balocci',
+			'profil_kecamatan' => $this->profilModel->getProfil()[0]
+		];
+
+		return view('profil_kecamatan/gambaran_umum', $data);
+	}
+
+	public function sejarah_kecamatan(){
+		$data = [
+			'title' => 'Sejarah Kecamatan | Kecamatan Balocci',
+			'profil_kecamatan' => $this->profilModel->getProfil()[0]
+		];
+
+		return view('profil_kecamatan/sejarah_kecamatan', $data);
+	}
+
+	public function peta(){
+	$data = [
+			'title' => 'Peta Kecamatan | Kecamatan Balocci',
+			'profil_kecamatan' => $this->profilModel->getProfil()[0]
+		];
+
+		return view('profil_kecamatan/peta', $data);
+	}
 }

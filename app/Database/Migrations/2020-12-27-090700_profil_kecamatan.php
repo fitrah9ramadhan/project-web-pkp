@@ -21,13 +21,9 @@ class ProfilKecamatan extends Migration
                                 'type'           => 'TEXT',
                                 'constraint'     => 5000
                         ],
-                        'visi_misi' => [
-                        	'type' => 'TEXT',
-                        	'constraint'  => 5000,
-                        ],
-                        'isi_berita' => [
-                                'type'           => 'TEXT',
-                                'constraint'     => 5000
+                        'peta' => [
+                        	'type' => 'VARCHAR',
+                        	'constraint'  => 1000,
                         ]
                 ]);
                 $this->forge->addKey('id', true);

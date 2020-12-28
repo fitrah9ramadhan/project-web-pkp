@@ -7,7 +7,7 @@ class ProfilModel extends Model
 {
 	protected $table = 'profil_kecamatan';
 	protected $useTimestamps = false;
-	protected $allowedFields = ['gambaran_umum', 'visi_misi', 'sejarah_kecamatan'];
+	protected $allowedFields = ['gambaran_umum', 'peta', 'sejarah_kecamatan'];
 
 	public function getProfil($id = false)
 	{

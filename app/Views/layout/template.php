@@ -26,10 +26,9 @@
           Profil Kecamatan
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Gambaran Umum</a>
-          <a class="dropdown-item" href="#">Sejarah Kecamatan</a>
-          <a class="dropdown-item" href="#">Visi & Misi</a>
-          <a class="dropdown-item" href="#">Bapak Bupati</a>
+          <a class="dropdown-item" href="/profil/gambaran_umum">Gambaran Umum</a>
+          <a class="dropdown-item" href="/profil/sejarah_kecamatan">Sejarah Kecamatan</a>
+          <a class="dropdown-item" href="/profil/peta">Peta</a>
 
         </div>
       </li>      

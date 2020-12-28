@@ -221,11 +221,31 @@ class Admin extends BaseController
 			exit;
 		}
 
+		if(!$this->validate([
+			'peta' => [
+				'rules' => 'uploaded[peta]|max_size[peta,5120]|is_image[peta]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
+			'errors' => [
+				'uploaded' => 'Pilih gambar peta terlebih dahulu',
+				'max_size' => 'Ukuran peta terlalu besar',
+				'is_image' => 'Yang anda pilih bukan gambar',
+				'mime_in' => 'Yang anda pilih bukan gambar'
+				]
+			]
+		])){
+			echo "Salah";
+		}
+
+		$filePeta = $this->request->getFile('peta');
+		//pindahkan file ke folder img publik kita
+		$filePeta->move('img');
+		//ambil nama file
+		$namaPeta = $filePeta->getName();
+
 		$this->profilModel->save([
 			'id' => $id,
 			'gambaran_umum' => $this->request->getVar('gambaran_umum'),
 			'sejarah_kecamatan' => $this->request->getVar('sejarah_kecamatan'),
-			'visi_misi' => $this->request->getVar('visi_misi')
+			'peta' => $namaPeta
 		]);
 
 		session()->setFlashdata('pesan', 'Profil berhasil diupdate');

@@ -3,7 +3,8 @@
 <?php $this->section('content'); ?>
 
 <?php foreach ($profil as $p): ?>
-<form action="/admin/update_profil" method="post">
+<form action="/admin/update_profil" method="post" enctype="multipart/form-data">
+	<?php echo csrf_field(); ?>
 	<table>
 		<tr>
 			<label for="gambaran_umum">Gambaran Umum</label>
@@ -16,8 +17,8 @@
 		</tr>
 		<br>
 		<tr>
-			<label for="visi_misi">Visi dan Misi</label>
-			<input type="text" name="visi_misi" id="visi_misi" value="<?php echo $p['visi_misi'];?>">
+			<label for="peta">Peta</label>
+			<input type="file" name="peta" id="peta">
 		</tr>
 		<br>
 		<tr>
