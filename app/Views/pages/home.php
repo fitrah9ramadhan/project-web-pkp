@@ -18,7 +18,7 @@
 				<?php foreach ($berita as $b): ?>
 				<tr>
 					<td><img src="/img/<?php echo $b['sampul']; ?>" width="300"></img></td>
-					<td><h2><a href="/berita/<?php echo $b['id'] ?>"><?php echo $b['judul_berita']; ?></a></h2></td>
+					<td><h4><a href="/berita/<?php echo $b['id'] ?>"><?php echo $b['judul_berita']; ?></a><p class="text-justify"><?php echo $b['isi_berita']; ?></p></h4></td>
 				</tr>
 				<?php endforeach; ?>
 			</table>
