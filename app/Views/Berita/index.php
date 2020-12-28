@@ -16,7 +16,7 @@
 		<tbody>
 			<?php foreach ($berita as $b): ?>
 			<tr>
-				<td><img src="/img/<?php echo $b['sampul']; ?>"></img></td>
+				<td><img src="/img/<?php echo $b['sampul']; ?>" width="300"></img></td>
 				<td><a href="/berita/<?php echo $b['id'] ?>"><?php echo $b['judul_berita']; ?></a></td>
 			</tr>
 			<?php endforeach; ?>

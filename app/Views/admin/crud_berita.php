@@ -2,7 +2,10 @@
 
 
 <?php $this->section('content'); ?>
-
+<br>
+<br>
+<br>
+<br>
 <a href="/adminlogin/logout">Logout</a>
 <h4><a href="/admin/tambah_berita">Tambah Berita</a></h4>
 <table cellpadding="10" cellspacing="0" border="1">
