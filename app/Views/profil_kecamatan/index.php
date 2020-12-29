@@ -7,7 +7,7 @@
 <br>
 <h1>Sejarah Kecamatan Balocci</h1>
 <p><?php echo $profil_kecamatan['sejarah_kecamatan']; ?></p>
-<h1>Visi dan Misi</h1>
-<p><?php echo $profil_kecamatan['visi_misi']; ?></p>
+<h1>Peta Kecamatan Balocci</h1>
+<img src="/img/<?php echo $profil_kecamatan['peta']; ?>"></img>
 
 <?php echo $this->endSection(); ?>
