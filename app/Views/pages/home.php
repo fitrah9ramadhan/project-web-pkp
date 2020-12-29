@@ -49,35 +49,25 @@
 	</div>
 </div>
 
-	<div class="container-fluid">
-	  <div class="row">
-	    <div class="col-sm">
-		    <table cellpadding="10" cellspacing="0" border="0">
-				<?php foreach ($berita as $b): ?>
-				<tr>
-					<td><img src="/img/<?php echo $b['sampul']; ?>" width="300"></img></td>
-					<td><h4><a href="/berita/<?php echo $b['id'] ?>"><?php echo $b['judul_berita']; ?></a><p class="text-justify"><?php echo $b['isi_berita']; ?></p></h4></td>
-				</tr>
-				<?php endforeach; ?>
-			</table>
-	    </div>
-	    <div class="col-sm">
-	      One of three columns
-	    </div>
-	 </div>
+<div class="container-fluid">
+	<div class="row">
+		<h1>-------Berita Terbaru------</h1>
+	</div>
+	<div class="row">
+	<?php foreach ($berita as $b) : ?>
+		<div class="col">
+			<img src="/img/<?php echo $b['sampul']; ?>" height="200">
+			<h4>
+				<?php echo $b["judul_berita"]; ?>
+			</h4>
+			<p>
+				<?php echo $b['isi_berita']; ?>
+			</p>
+		</div>
+	<?php endforeach; ?>
+	</div>
+</div>
 
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
 
 
 <?php echo $this->endSection(); ?>

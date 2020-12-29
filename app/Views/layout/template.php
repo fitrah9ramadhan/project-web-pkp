@@ -11,22 +11,11 @@
 </head>
 <body>
 
-<div class="container" id="navbar">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" style="height: 100px;">
+<div class="container-fluid" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light float-right">
 
-    <a class="navbar-brand" href="#">
-
-      <div class="logo-pangkep">
-        <img src="/img/logo_pangkep.png" width="70" height="70" class="d-inline-block align-top" alt="" loading="lazy">
-      </div>
-
-      <div class="nama">
-        
-        <div class="satu">
-          <p>  KECAMATAN BALOCCI</p>
-        </div>
-      </div>
-      
+    <a class="navbar-brand" href="/">
+        <img src="/img/logo_kecamatan.png" class="d-inline-block align-top" alt="" loading="lazy">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
