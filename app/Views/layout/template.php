@@ -2,20 +2,20 @@
 <html>
 <head>
 
+<!-- Bootstrap -->
 <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="/template_style.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-	<title><?= $title; ?></title>
+<title><?= $title; ?></title>
 
 </head>
 <body>
 
 <div class="container-fluid" id="navbar">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light float-right shadow-lg p-3 mb-5 bg-white rounded" >
-
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light float-right shadow-lg p-3 mb-5 rounded" >
     <a class="navbar-brand" href="/">
-        <img src="/img/logo_kecamatan.png" class="d-inline-block align-top" alt="" loading="lazy">
+        <!-- <img src="/img/logo_kecamatan.png" class="d-inline-block align-top" alt="" loading="lazy" width="200" style="margin-left: 150px;"> -->
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

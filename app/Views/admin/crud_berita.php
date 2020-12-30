@@ -2,10 +2,7 @@
 
 
 <?php $this->section('content'); ?>
-<br>
-<br>
-<br>
-<br>
+<div class="container-fluid" style="margin-top: 200px;">
 <a href="/adminlogin/logout">Logout</a>
 <h4><a href="/admin/tambah_berita">Tambah Berita</a></h4>
 <table cellpadding="10" cellspacing="0" border="1">
@@ -29,11 +26,12 @@
 					</form>
 				</td>
 				
-				<td><img src="/img/<?php echo $b['sampul']; ?>"></img></td>
+				<td><img src="/img/<?php echo $b['sampul']; ?>" width="300"></img></td>
 				<td><a href="detail_berita/<?php echo $b['id'] ?>"><?php echo $b['judul_berita']; ?></a></td>
 			</tr>
 			<?php endforeach; ?>
 		</tbody>
 	</table>
+</div>
 
 <?php $this->endSection(); ?>

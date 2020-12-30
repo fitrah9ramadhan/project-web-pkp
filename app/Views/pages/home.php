@@ -1,84 +1,103 @@
 <?php echo $this->extend('layout/template'); ?>
 
 <?php echo $this->section('content'); ?>
-
-<div class="carousel-container shadow-lg p-3 mb-5 bg-white rounded" id="slider">
-	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-	    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-	    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-	    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-	  </ol>
-	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-	      <img src="img/gambar-1.jpg" class="d-block w-100" alt="...">
-	      <div class="carousel-caption d-none d-md-block">
-	        <h1 class="display-4">KECAMATAN BALOCCI</h1>
-			<p class="lead">Portal informasi resmi pemerintahan Kecamatan Balocci Kabupaten Pangkep seputar struktur pemerintahan daerah, gambaran umum daerah, berita terkini dan hal - hal terkait daerah Kecamatan Pangkajene.</p>
-			<hr class="my-4">
-			<button type="button" class="btn btn-info" href="#">Selengkapnya</button>
-	      </div>
-	    </div>
-	    <div class="carousel-item">
-	      <img src="img/gambar-2.jpg" class="d-block w-100" alt="...">
-	      <div class="carousel-caption d-none d-md-block">
-	        <h1 class="display-4">TAMAN PRASEJARAH SUMPANG BITA</h1>
-			<p class="lead">Taman Prasejarah Sumpang Bita secara administratif berada di Kampung Sumpang Bita, Kelurahan Balocci Kecamatan Balocci Kabupaten Pangkajene Kepulauan. Taman Prasejarah ini termasuk dalam areal Taman Nasional Bantimurung- Bulusaraung (TN – BABUL).</p>
-			<hr class="my-4">
-			<button type="button" class="btn btn-info" href="#">Selengkapnya</button>
-	      </div>
-	    </div>
-	    <div class="carousel-item">
-	      <img src="img/gambar-3.jpg" class="d-block w-100" alt="...">
-	      <div class="carousel-caption d-none d-md-block">
-	        <h1 class="display-4">Taman Batu</h1>
-			<p class="lead">Lanskap yang unik menjadikan taman batu ini menjadi jujukan banyak artis selfie. Perpaduan warna hitam dari batu dan hijau dari tumbuhan yang ada membuat spot ini ramah untuk jadi background berswafoto kamu.</p>
-			<hr class="my-4">
-			<button type="button" class="btn btn-info" href="#">Selengkapnya</button>
-	      </div>
-	    </div>
+	<div class="jumbotron jumbotron-fluid shadow p-3 mb-5 bg-white rounded">
+	  <div class="judul-besar">
+	    <h1 class="display-4">Kecamatan Balocci</h1>
+	    <p class="lead">Selamat Datang di website resmi Kecamatan Balocci Kabupaten Pangkep.</p>
+	    <hr class="my-4">
 	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
+	</div>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-6">
+     		<h4 class="text-left font-weight-bold header-section">BERITA DAERAH</h4>
+     		<hr>
+     		<div class="row mt-3">
+        		<?php foreach($berita as $brt): ?>
+        		<div class="col-md-4 col-sm-12 mb-md-0 mb-3 col-berita">
+        			<div class="card-berita shadow-lg p-3 mb-5 bg-white rounded">
+
+        				<div class="row">
+        					<div class="col-4 col-sm-4 col-md-12">
+           						<div class="text-center mt-md-0 mt-4">
+            						<img data-src="#" alt="" class="img-fluid lazyloaded" src="/img/<?php echo $brt['sampul']; ?>">
+          						</div>
+        					</div>
+       						<div class="col-8 col-sm-8 col-md-12">
+	         					<strong class="d-block mt-3 judul-berita text-uppercase"><?php echo $brt['judul_berita']; ?></strong>
+	         					<small><i class="fa fa-clock"></i><?php echo $brt['tanggal_berita']; ?></small>
+	        		 			<label for="" class="text-secondary text-justify mt-1 isi-berita">
+	          							cuplikan berita menggunakan JQuery cuplikan berita menggunakan JQuery
+	        					</label>
+	          					<a href="/berita/<?php echo $brt['id'];?>" class="d-md-none d-lg-none">Baca</a>
+     	 					</div>
+   						</div>
+ 					</div>
+				</div>
+				<?php endforeach; ?>
+
+       
+				<div class="col-md-12 text-right mb-sm-3 mb-3 mb-md-0 mt-md-3">
+ 					<a href="/berita" class="btn btn-outline-dark">Berita Lainnya <i class="fa fa-arrow-right"></i></a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-md-3">
+			<h4 class="text-left font-weight-bold header-section">AGENDA KECAMATAN</h4>
+			<hr>
+			<div class="row mt-3">
+				<?php foreach($agenda as $agn): ?>
+   				<div class="col-12 row-pengumuman">
+    				<div class="card shadow-lg p-1 bg-white rounded">
+     					<div class="card-body card-pengumuman">
+      						<small><i class="fa fa-clock"></i> <?php echo $agn['tanggal']; ?> | <?php echo $agn['tempat']; ?></small>
+      						<strong class="d-block judul-pengumuman text-uppercase"><?php echo $agn['nama_agenda']; ?></strong>
+      						<a href="#" class="float-right">Baca</a>
+    					</div>
+  					</div>
+				</div>
+				<?php endforeach; ?>
+
+				<div class="col-md-12 text-right mb-sm-3 mb-3 mb-md-0 mt-md-3 mt-3" id="div_info_lain">
+				 	<a href="#" class="btn btn-outline-dark">Info Lainnya <i class="fa fa-arrow-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3">
+			<h4 class="text-left font-weight-bold header-section">PENGUMUMAN</h4>
+			<hr>
+			<style>
+			   @media (max-width: 992px){
+			     .last-row-pengumuman{
+			      margin-bottom:3em !important;
+			    }
+			  }
+			</style>
+
+			<div class="row mt-3">
+				<!-- taruh foreach disini -->
+	   			<div class="col-12 row-pengumuman ">
+	   				<div class="card">
+	    				<div class="card-body card-pengumuman">
+						    <small><i class="fa fa-clock"></i> 14 Desember 2020</small>
+						    <strong class="d-block judul-pengumuman">Pengumuman Hasil Lomba Domino Tingkat Kecamatan</strong>
+						    <a href="#" class="float-right">Baca</a>
+	   					</div>
+	 				</div>
+				</div>
+				<!-- taruh endforeach disini -->
+	  			
+				<div class="col-md-12 mt-3 text-right mt-md-4 position-absolute " style="bottom: 0">
+	  				<a href="#">Pengumuman Lainnya <i class="fa fa-arrow-right"></i></a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
-
-<div class="container">
-	<div class="pemisah">
-		<h1>Berita Terbaru</h1>
-	</div>
-	<div class="card-deck">
-	  <?php foreach ($berita as $b): ?>
-		  <div class="card">
-		    <img src="/img/<?php echo $b['sampul']; ?>" class="card-img-top" alt="...">
-		    <div class="card-body shadow p-3 mb-5 bg-white rounded">
-		      <h5 class="card-title"><?php echo $b["judul_berita"]; ?></h5>
-		      <p class="card-text">Isi Berita, nanti menggunakan JQuery</p>
-		      <p class="card-text"><small class="text-muted"><?php echo $b['tanggal_berita']; ?></small></p>
-		      <a href="/berita/<?php echo $b['id']; ?>" class="btn btn-primary">Selengkapnya</a>
-		    </div>
-		  </div>
-	  <?php endforeach; ?>
-  		  <div class="berita-lengkap">
-		  	<a href="/berita" class="btn btn-primary" style="position: right;">Selengkapnya</a>
-		  </div>
-
-	</div>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
 
 <?php echo $this->endSection(); ?>

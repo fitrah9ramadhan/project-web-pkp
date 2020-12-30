@@ -10,7 +10,8 @@ class HalamanUtama extends BaseController
 		$data = [
 
 			'title' => 'Home | Kecamatan Balocci',
-			'berita' => $this->beritaModel->orderBy('id', 'desc')->paginate(3, 'berita')
+			'berita' => $this->beritaModel->orderBy('id', 'desc')->paginate(3, 'berita'),
+			'agenda' => $this->agendaModel->orderBy('id', 'desc')->paginate(3, 'agenda')
 
 		];
 

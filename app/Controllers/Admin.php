@@ -330,4 +330,31 @@ class Admin extends BaseController
 		return redirect()->to('/admin/');
 	}
 
+	public function tambah_agenda()
+	{
+		if (!isset($_SESSION['login'])) {
+			header('Location:/adminlogin');
+			exit;
+		}
+
+		$data = [
+			'title' => 'Tambah Agenda'
+		];
+
+		return view('admin/tambah_agenda', $data);
+	}
+
+	public function save_agenda()
+	{
+		$this->agendaModel->save([
+			'nama_agenda' => $this->request->getVar('nama_agenda'),
+			'tempat' => $this->request->getVar('tempat'),
+			'tanggal' => $this->request->getVar('tanggal')
+		]);
+
+		session()->setFlashdata('pesan', 'Pemdes berhasil ditambahkan');
+
+		return redirect()->to('/admin/');
+	}
+
 }

@@ -3,7 +3,7 @@
 
 <?php $this->section('content'); ?>
 
-
+<div class="container-fluid" style="margin-top: 200px;">
 <a href="/adminlogin/logout">Logout</a>
 <h4><a href="/admin/tambah_pemdes">Tambah Pemdes</a></h4>
 <table cellpadding="10" cellspacing="0" border="1">
@@ -58,4 +58,5 @@
 
 </table>
 
+</div>
 <?php $this->endSection(); ?>

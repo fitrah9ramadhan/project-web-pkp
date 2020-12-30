@@ -46,6 +46,7 @@ class BaseController extends Controller
 		$this->kontakModel = new \App\Models\KontakModel();
 		$this->profilModel = new \App\Models\ProfilModel();
 		$this->desaModel = new \App\Models\DesaModel();
+		$this->agendaModel = new \App\Models\AgendaModel();
 	}
 
 }
