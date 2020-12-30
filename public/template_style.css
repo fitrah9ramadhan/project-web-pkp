@@ -17,18 +17,18 @@
 	font-weight: bold;
 }
 
-/*.navbar-brand {
-	display: flex;
-	margin: 30px auto;
-}*/
-
-/*.nama {
-	display: flex;
-	align-items: center;
-	margin-left: 30px;
-	font-weight: bold;
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
 }
 
-.navbar-brand img {
-	margin: 30px auto;
-}*/
+.pemisah {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.card {
+	border: 0;
+}

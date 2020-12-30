@@ -5,7 +5,7 @@
 
 <h1>Daftar Berita</h1>
 
-
+<div class="container-fluid" style="margin-top: 100px">
 	<table cellpadding="10" cellspacing="0" border="1">
 		<thead>
 			<tr>
@@ -22,5 +22,7 @@
 			<?php endforeach; ?>
 		</tbody>
 	</table>
+</div>
+<?= $pager->links('berita', 'pagination_ku'); ?>
 
 <?php $this->endSection(); ?>

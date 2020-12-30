@@ -2,7 +2,7 @@
 
 <?php echo $this->section('content'); ?>
 
-<div class="carousel-container" id="slider">
+<div class="carousel-container shadow-lg p-3 mb-5 bg-white rounded" id="slider">
 	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 	  <ol class="carousel-indicators">
 	    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -33,7 +33,7 @@
 	      <div class="carousel-caption d-none d-md-block">
 	        <h1 class="display-4">Taman Batu</h1>
 			<p class="lead">Lanskap yang unik menjadikan taman batu ini menjadi jujukan banyak artis selfie. Perpaduan warna hitam dari batu dan hijau dari tumbuhan yang ada membuat spot ini ramah untuk jadi background berswafoto kamu.</p>
-			<hr class="my-4" style="font-weight: bold;">
+			<hr class="my-4">
 			<button type="button" class="btn btn-info" href="#">Selengkapnya</button>
 	      </div>
 	    </div>
@@ -49,24 +49,35 @@
 	</div>
 </div>
 
-<div class="container-fluid">
-	<div class="row">
-		<h1>-------Berita Terbaru------</h1>
+<div class="container">
+	<div class="pemisah">
+		<h1>Berita Terbaru</h1>
 	</div>
-	<div class="row">
-	<?php foreach ($berita as $b) : ?>
-		<div class="col">
-			<img src="/img/<?php echo $b['sampul']; ?>" height="200">
-			<h4>
-				<?php echo $b["judul_berita"]; ?>
-			</h4>
-			<p>
-				<?php echo $b['isi_berita']; ?>
-			</p>
-		</div>
-	<?php endforeach; ?>
+	<div class="card-deck">
+	  <?php foreach ($berita as $b): ?>
+		  <div class="card">
+		    <img src="/img/<?php echo $b['sampul']; ?>" class="card-img-top" alt="...">
+		    <div class="card-body shadow p-3 mb-5 bg-white rounded">
+		      <h5 class="card-title"><?php echo $b["judul_berita"]; ?></h5>
+		      <p class="card-text">Isi Berita, nanti menggunakan JQuery</p>
+		      <p class="card-text"><small class="text-muted"><?php echo $b['tanggal_berita']; ?></small></p>
+		      <a href="/berita/<?php echo $b['id']; ?>" class="btn btn-primary">Selengkapnya</a>
+		    </div>
+		  </div>
+	  <?php endforeach; ?>
+  		  <div class="berita-lengkap">
+		  	<a href="/berita" class="btn btn-primary" style="position: right;">Selengkapnya</a>
+		  </div>
+
 	</div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 

@@ -7,19 +7,13 @@ class HalamanUtama extends BaseController
 	public function index()
 	{
 
-		$berita = $this->beritaModel->getBerita();
-
-		// foreach ($berita as $b) {
-
-		// 	dd($berita);
-		// }
-
 		$data = [
 
 			'title' => 'Home | Kecamatan Balocci',
-			'berita' => $this->beritaModel->getBerita()
+			'berita' => $this->beritaModel->orderBy('id', 'desc')->paginate(3, 'berita')
 
 		];
+
 		return view('pages/home', $data);
 	}
 }
