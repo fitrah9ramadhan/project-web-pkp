@@ -1,19 +1,32 @@
 <?php 
 
 namespace App\Database\Seeds;
-class pemerintahan_desaSeeder extends \CodeIgniter\Database\Seeder
 use CodeIgniter\I18n\Time;
+class agendaSeeder extends \CodeIgniter\Database\Seeder
 {
         public function run()
         {
                 $data = [
 
-                        'nama_agenda' => 'Desa A',
-                        'tempat'    => 'Bapak A',
+                        [
+                        'nama_agenda' => 'Muswil',
+                        'tempat'    => 'Malino',
                         'tanggal' => Time::now()
+                ],
+                        [
+                        'nama_agenda'=>'Makan-makan',
+                        'tempat' =>'Rumah Bapak Camat',
+                        'tanggal'=> Time::now()
+
+                ],
+                        [
+                        'nama_agenda' => 'Rapat Kerja III',
+                        'tempat' => 'Puncak Bulussaraung',
+                        'tanggal' => Time::now()
+                        ]
                 ];
 
                 // Using Query Builder
-                $this->db->table('agenda')->insert($data);
+                $this->db->table('agenda')->insertBatch($data);
         }
 }

@@ -13,7 +13,7 @@
 <body>
 
 <div class="container-fluid" id="navbar">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light float-right shadow-lg p-3 mb-5 bg-white rounded" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light float-right shadow-lg p-3 mb-5 bg-white rounded fixed-top" >
 
     <a class="navbar-brand" href="/">
         <img src="/img/logo_kecamatan.png" class="d-inline-block align-top" alt="" loading="lazy">

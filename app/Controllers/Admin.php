@@ -346,6 +346,11 @@ class Admin extends BaseController
 
 	public function save_agenda()
 	{
+		if (!isset($_SESSION['login'])) {
+			header('Location:/adminlogin');
+			exit;
+		}
+
 		$this->agendaModel->save([
 			'nama_agenda' => $this->request->getVar('nama_agenda'),
 			'tempat' => $this->request->getVar('tempat'),
@@ -353,6 +358,76 @@ class Admin extends BaseController
 		]);
 
 		session()->setFlashdata('pesan', 'Pemdes berhasil ditambahkan');
+
+		return redirect()->to('/admin/');
+	}
+
+	public function edit_camat()
+	{
+		if (!isset($_SESSION['login'])) {
+			header('Location:/adminlogin');
+			exit;
+		}
+
+		$data = [
+			'title' => 'Edit Camat',
+			'camat' => $this->camatModel->getCamat()
+		];
+
+		return view('/admin/edit_camat', $data);
+	}
+
+	public function update_camat($id=1)
+	{
+		if(!isset($_SESSION['login'])){
+			header('Location: /adminlogin');
+			exit;
+		}
+
+		if(!$this->validate([
+			'gambar_camat' => [
+				'rules' => 'uploaded[peta]|max_size[peta,5120]|is_image[peta]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
+			'errors' => [
+				'uploaded' => 'Pilih gambar peta terlebih dahulu',
+				'max_size' => 'Ukuran peta terlalu besar',
+				'is_image' => 'Yang anda pilih bukan gambar',
+				'mime_in' => 'Yang anda pilih bukan gambar'
+				]
+			],
+			'gambar_sekcam' => [
+				'rules' => 'uploaded[peta]|max_size[peta,5120]|is_image[peta]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
+			'errors' => [
+				'uploaded' => 'Pilih gambar peta terlebih dahulu',
+				'max_size' => 'Ukuran peta terlalu besar',
+				'is_image' => 'Yang anda pilih bukan gambar',
+				'mime_in' => 'Yang anda pilih bukan gambar'
+				]
+			]
+		])){
+			echo "Salah";
+		}
+
+		$fileGambarCamat = $this->request->getFile('gambar_camat');
+		$fileGambarSekcam = $this->request->getFile('gambar_sekcam');
+
+		//pindahkan file ke folder img publik kita
+		$fileGambarCamat->move('img/camat');
+		$fileGambarSekcam->move('img/sekcam');
+		//ambil nama file
+		$namaGambarCamat = $fileGambarCamat->getName();
+		$namaGambarSekcam = $fileGambarSekcam->getName();
+
+		$this->camatModel->save([
+			'id' => $id,
+			'camat' => $this->request->getVar('camat'),
+			'sekcam' => $this->request->getVar('sekcam'),
+			'quotes_camat' => $this->request->getVar('quotes_camat'),
+			'quotes_sekcam' => $this->request->getVar('quotes_sekcam'),
+			'gambar_camat' => $namaGambarCamat,
+			'gambar_sekcam' => $namaGambarSekcam
+		]);
+
+		session()->setFlashdata('pesan', 'Profil berhasil diupdate');
 
 		return redirect()->to('/admin/');
 	}

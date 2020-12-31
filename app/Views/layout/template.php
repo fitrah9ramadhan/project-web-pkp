@@ -14,8 +14,8 @@
 
 <div class="container-fluid" id="navbar">
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light float-right shadow-lg p-3 mb-5 rounded" >
-    <a class="navbar-brand" href="/">
-        <!-- <img src="/img/logo_kecamatan.png" class="d-inline-block align-top" alt="" loading="lazy" width="200" style="margin-left: 150px;"> -->
+    <a class="navbar-brand" href="/" style=" font-family: verdana;">
+        KECAMATAN BALOCCI
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

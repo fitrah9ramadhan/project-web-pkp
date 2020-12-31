@@ -47,6 +47,7 @@ class BaseController extends Controller
 		$this->profilModel = new \App\Models\ProfilModel();
 		$this->desaModel = new \App\Models\DesaModel();
 		$this->agendaModel = new \App\Models\AgendaModel();
+		$this->camatModel = new \App\Models\CamatModel();
 	}
 
 }

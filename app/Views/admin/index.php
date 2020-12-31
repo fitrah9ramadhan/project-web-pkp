@@ -12,6 +12,7 @@
 	<a href="/admin/edit_kontak">Edit Kontak</a>
 	<a href="/admin/edit_profil">Edit Profil</a>
 	<a href="/admin/tambah_agenda">Tambah Agenda</a>
+	<a href="/admin/edit_camat">Edit Camat</a>
 </div>
 </div>
 <?php $this->endSection(); ?>'
