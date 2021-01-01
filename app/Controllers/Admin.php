@@ -78,7 +78,7 @@ class Admin extends BaseController
 	
 		// validasi input
 		if(!$this->validate([
-			'judul_berita' => 'required|is_unique[berita.judul_berita]',
+			'judul_berita' => 'required|is_unique[berita.judul_berita]|max_length[100]',
 			'isi_berita' => 'required|is_unique[berita.isi_berita]',
 			'sampul' => [
 				'rules' => 'uploaded[sampul]|max_size[sampul,5120]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',

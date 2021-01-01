@@ -19,7 +19,7 @@ public function up()
                         ],
                         'judul_berita' => [
                                 'type'           => 'TEXT',
-                                'constraint'     => 1000
+                                'constraint'     => 100
                         ],
                         'penulis_berita' => [
                         	'type' => 'TEXT',

@@ -1,29 +1,83 @@
-.my-carousel img {
-	height: 650px;
+.navbar {
+	background-color: #b50404;
 }
 
-.my-carousel {
-	margin-bottom: 100px;
+.my-carousel img {
+	height: 667px;
+	opacity: 0.9;
 }
 
 .carousel-caption{
 	margin-bottom: 200px;
 	text-align: left;
 }
-.side-camat img{
-	width: 100%;
-}
 
-.card-group {
-	width: 100%;
+.selamat-datang {
+	background-color: #b50404;
+	height: 75px;
 	display: flex;
-	border: none;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
 }
 
-h5 {
-	font-size: 15px;
+.judul-selamat-datang{
+	margin: auto;
+	display: flex;
 }
 
-.side-camat h4{
-	margin-bottom: 33px;
+.judul-selamat-datang h6 {
+	color: white;
+	font-family: sans-serif;
+}
+
+.selamat-datang-dua {
+	background-image: url(/img/blur-bulsar.png);
+	height: 243px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+}
+
+.judul-selamat-datang-dua {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+
+.judul-selamat-datang-dua{
+	display: flex;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.judul-selamat-datang-dua h3 {
+	display: flex;
+	font-family: sans-serif;
+	color: #b50404;
+	text-align: center;
+}
+
+.judul-selamat-datang-dua .garis{
+	height: 4px;
+	width: 100px;
+	background-color: #b50404;
+	margin-bottom: 30px;
+}
+
+.judul-selamat-datang-dua p{
+	color: white;
+	text-align: center;
+}
+
+
+.konten-satu{
+	height: 1432px;
+	background-color: #132b57;
 }
