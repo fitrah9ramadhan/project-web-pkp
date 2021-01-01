@@ -12,6 +12,27 @@
 	text-align: left;
 }
 
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 59px;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
 .selamat-datang {
 	background-color: #b50404;
 	height: 75px;
@@ -52,9 +73,9 @@
 
 .judul-selamat-datang-dua{
 	display: flex;
-	margin-left: 200px;
-	margin-right: 200px;
+	flex-wrap: wrap;
 	font-family: 'Open Sans', sans-serif;
+
 }
 
 .judul-selamat-datang-dua h3 {
@@ -71,13 +92,60 @@
 	margin-bottom: 30px;
 }
 
-.judul-selamat-datang-dua p{
+.paragraf-selamat-datang-dua{
+	display: flex;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.selamat-datang-dua p{
 	color: white;
 	text-align: center;
 }
 
 
 .konten-satu{
-	height: 1432px;
 	background-color: #132b57;
+	padding: 50px;
+}
+
+.judul-besar{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+}
+
+.judul-besar h5 {
+	color: white;
+}
+
+.judul-besar h2 {
+	color: #b50404;
+}
+
+.judul-besar .garis{
+	height: 4px;
+	background-color: #b50404;
+	margin-bottom: 30px;
+}
+
+.berita-terkini {
+	margin-bottom: 20px;
+}
+
+.footer-berita {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.baca-berita-lainnya div {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
 }

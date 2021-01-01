@@ -2,6 +2,12 @@
 <html>
 <head>
 
+<!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<!-- animate -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 <!-- Bootstrap -->
 <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="/template_style.css">
@@ -13,7 +19,7 @@
 <body>
 
 <div class="container-fluid" id="navbar">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light float-right shadow-lg p-3 mb-5 rounded" >
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light float-right">
     <!-- <a class="navbar-brand" href="/" style=" font-family: verdana;">
         KECAMATAN BALOCCI
     </a> -->
@@ -57,9 +63,30 @@
 
 <?php echo $this->renderSection('content'); ?>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    // Wrap every letter in a span
+      var textWrapper = document.querySelector('.ml10 .letters');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        anime.timeline({loop: true})
+
+      .add({
+        targets: '.ml10 .letter',
+        rotateY: [-90, 0],
+        duration: 1300,
+        delay: (el, i) => 45 * i
+      })
+      .add({
+        targets: '.ml10',
+        opacity: 0,
+        duration: 1300,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/2d1fd503cf.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
