@@ -2,8 +2,8 @@
 
 <?php echo $this->section('content'); ?>
 <!-- Start Carousel -->
-<div class="my-carousel  shadow-lg bg-white rounded  shadow-lg bg-white rounded  shadow-lg bg-white rounded">
-	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div class="my-carousel">
+	<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
 	  <ol class="carousel-indicators">
 	    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 	    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -13,22 +13,15 @@
 	    <div class="carousel-item active">
 	      <img src="img/gambar-2.jpg" class="d-block w-100" alt="...">
 	      <div class="carousel-caption d-none d-md-block">
-	        <h1 class="ml10">
-		        <span class="text-wrapper">
-		        	<span class="letters">PINTU MASUK BULUSSARAUNG</span>
-		        </span>
-	    	</h1>
+	        <h1 class="ml10">PINTU MASUK BULUSSARAUNG</h1>
 	        <p>Ingin menaklukkan Bulussaraung? Desa Tompobulu Kecamatan Balocci merupakan pintu masuk jalur Bulussaraung.
 	        </p>
 	      </div>
 	    </div>
 	    <div class="carousel-item">
 	      <img src="img/gambar-1.jpg" class="d-block w-100" alt="...">
-	      <div class="carousel-caption d-none d-md-block">
-	        <h1>
-		        	DANAU CINTA
-		   
-	    	</h1>
+	      <div class="carousel-caption d-none d-md-block" data-aos = "fade-down">
+	        <h1 class="ml10">DANAU CINTA</h1>
 	        <p>
 	        		Tempat ini dinamakan Danau Cinta dikarenakan danau ini berbentuk hati apabila dilihat dari ketinggian.
 	        </p>
@@ -37,7 +30,10 @@
 	    <div class="carousel-item">
 	      <img src="img/gambar-3.jpg" class="d-block w-100" alt="...">
 	      <div class="carousel-caption d-none d-md-block">
-	        <h1>PEMANDANGAN INDAH SEPANJANG JALAN
+	        <h1 class="ml10">
+		        <span class="text-wrapper">
+		        	<span class="letters">PEMANDANGAN INDAH SEPANJANG JALAN</span>
+		        </span>
 	    	</h1>
 	        <p>
 	        			Kamu tidak bakalan bosan di perjalanan, dikelilingi pemandangan indah!.
@@ -60,7 +56,7 @@
 
 <!-- Start Selamat Datang -->
 <div class="selamat-datang container-fluid">
-	<div class="judul-selamat-datang ">
+	<div class="judul-selamat-datang">
 		<marquee>
 			<div class="row">
 				<h6>Selamat Datang di Laman Resmi Pemerintah Kecamatan Balocci</h6>
@@ -70,17 +66,19 @@
 </div>
 <!-- End Selamat Datang -->
 <div class="selamat-datang-dua row container-fluid">
-	<div class="judul-selamat-datang-dua row container">
+	<div class="judul-selamat-datang-dua row container" data-aos = "fade-down">
 		<div class="row">
-			<h3 class="ml16">
-				<span class="text-wrapper">
-					<span class="letters">Pemerintah Kecamatan Balocci</span>
-				</span>
-			</h3>
+			<h3>Pemerintah Kecamatan Balocci</h3>
 		</div>
 		<div class="garis"></div>
 		<div class="paragraf-selamat-datang-dua row">
-			<p>Website Pemerintah Kecamatan Balocci ini hadir dengan harapan dapat meningkatkan ketersediaan informasi yang dibutuhkan serta memberikan kenyamanan masyarakat saat melakukan akses. Silakan jelajahi website ini dengan mengikuti petunjuk menu-menu yang tersedia. Semoga bermanfaat.</p>
+			<p class="ml14v2">
+				<span class="text-wrapper">
+					<span class="letters">
+						Website Pemerintah Kecamatan Balocci ini hadir dengan harapan dapat meningkatkan ketersediaan informasi yang dibutuhkan serta memberikan kenyamanan masyarakat saat melakukan akses. Silakan jelajahi website ini dengan mengikuti petunjuk menu-menu yang tersedia. Semoga bermanfaat.
+					</span>
+				</span>
+			</p>
 		</div>
 	</div>
 </div>
@@ -90,12 +88,12 @@
 
 <div class="konten-satu">
 	<div class="container">
-		<div class="judul-besar row">
+		<div class="judul-besar row" data-aos="fade-down">
 			<div><h5>Informasi Teraktual</h5></div>
 			<div><h2>Berita Terkini</h2></div>
 			<div class="garis"></div>
 		</div>
-		<div class="berita row">
+		<div class="berita row" data-aos="zoom-in">
 			<?php foreach($berita as $brt): ?>
 			<div class="berita-terkini col-md-4 col-sm-12 col-xs-12">
 				<div class="row">
