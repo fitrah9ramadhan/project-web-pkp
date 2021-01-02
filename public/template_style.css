@@ -33,6 +33,22 @@
   transform-origin: 0 0;
 }
 
+
+.ml16 {
+  color: #402d2d;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 .selamat-datang {
 	background-color: #b50404;
 	height: 75px;

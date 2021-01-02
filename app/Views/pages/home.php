@@ -18,43 +18,30 @@
 		        	<span class="letters">PINTU MASUK BULUSSARAUNG</span>
 		        </span>
 	    	</h1>
-	        <p class="ml2">
-	        	<span class="text-wrapper">
-	        		<span class="letters">Ingin menaklukkan Bulussaraung? Desa Tompobulu Kecamatan Balocci merupakan pintu masuk jalur Bulussaraung.</span>
-	        	</span>
+	        <p>Ingin menaklukkan Bulussaraung? Desa Tompobulu Kecamatan Balocci merupakan pintu masuk jalur Bulussaraung.
 	        </p>
 	      </div>
 	    </div>
 	    <div class="carousel-item">
 	      <img src="img/gambar-1.jpg" class="d-block w-100" alt="...">
 	      <div class="carousel-caption d-none d-md-block">
-	        <h1 class="ml10">
-		        <span class="text-wrapper">
-		        	<span class="letters">DANAU CINTA</span>
-		        </span>
+	        <h1>
+		        	DANAU CINTA
+		   
 	    	</h1>
-	        <p class="ml2">
-	        	<span class="text-wrapper">
-	        		<span class="letters">
-	        		Tempat ini dinamakan Danau Cinta dikarenakan danau ini berbentuk hati apabila dilihat dari ketinggian.</span>
-	        	</span>
+	        <p>
+	        		Tempat ini dinamakan Danau Cinta dikarenakan danau ini berbentuk hati apabila dilihat dari ketinggian.
 	        </p>
 	      </div>
 	    </div>
 	    <div class="carousel-item">
 	      <img src="img/gambar-3.jpg" class="d-block w-100" alt="...">
 	      <div class="carousel-caption d-none d-md-block">
-	        <h1 class="ml10">
-		        <span class="text-wrapper">
-		        	<span class="letters">PEMANDANGAN INDAH SEPANJANG JALAN</span>
-		        </span>
+	        <h1>PEMANDANGAN INDAH SEPANJANG JALAN
 	    	</h1>
-	        <p class="ml2">
-	        	<span class="text-wrapper">
-	        		<span class="letters">
+	        <p>
 	        			Kamu tidak bakalan bosan di perjalanan, dikelilingi pemandangan indah!.
-	        		</span>
-	        	</span>
+	        
 	   		</p>
 	      </div>
 	    </div>
@@ -85,7 +72,11 @@
 <div class="selamat-datang-dua row container-fluid">
 	<div class="judul-selamat-datang-dua row container">
 		<div class="row">
-			<h3>Pemerintah Kecamatan Balocci</h3>
+			<h3 class="ml16">
+				<span class="text-wrapper">
+					<span class="letters">Pemerintah Kecamatan Balocci</span>
+				</span>
+			</h3>
 		</div>
 		<div class="garis"></div>
 		<div class="paragraf-selamat-datang-dua row">
