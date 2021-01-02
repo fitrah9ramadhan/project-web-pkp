@@ -1,9 +1,9 @@
-<?php $this->extend('layout/template'); ?>
+<?php echo $this->extend('layout_dua/template'); ?>
 
-<?php $this->section('content'); ?>
+<?php echo $this->section('content'); ?>
 
 <h1>Peta Kecamatan Balocci</h1>
 
 <img class="img-fluid" src="/img/<?php echo $profil_kecamatan['peta']; ?>">
 
-<?php $this->endSection(); ?>
+<?php echo $this->endSection(); ?>

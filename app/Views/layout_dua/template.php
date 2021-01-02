@@ -3,7 +3,7 @@
 <head>
 
     <!-- template_style -->
-    <link rel="stylesheet" type="text/css" href="template_style.css">
+    <link rel="stylesheet" type="text/css" href="../template_style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
@@ -35,9 +35,9 @@
             Profil Kecamatan
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item text-black" href="profil/gambaran_umum">Gambaran Umum</a>
-            <a class="dropdown-item text-black" href="profil/sejarah_kecamatan">Sejarah</a>
-            <a class="dropdown-item text-black" href="profil/peta">Peta</a>
+            <a class="dropdown-item text-black" href="/profil/gambaran_umum">Gambaran Umum</a>
+            <a class="dropdown-item text-black" href="/profil/sejarah_kecamatan">Sejarah</a>
+            <a class="dropdown-item text-black" href="/profil/peta">Peta</a>
           </div>
         </li>
         <li class="nav-item">

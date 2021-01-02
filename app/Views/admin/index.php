@@ -1,7 +1,6 @@
-<?php echo $this->extend('layout_admin/template'); ?>
+<?php echo $this->extend('layout_dua/template'); ?>
 
-
-<?php $this->section('content'); ?>
+<?php echo $this->section('content'); ?>
 
 
 <div class="container-fluid" style="margin-top: 200px;">
@@ -14,8 +13,10 @@
 	<a href="/admin/tambah_agenda">Tambah Agenda</a>
 	<a href="/admin/edit_camat">Edit Camat</a>
 </div>
-</div>
-<?php $this->endSection(); ?>'
+
+<a href="/">Kembali</a>
+
+<?php echo $this->endSection(); ?>'
 
 
 

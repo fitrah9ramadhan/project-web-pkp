@@ -32,8 +32,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'HalamanUtama::index');
 $routes->get('/berita/(:segment)', 'Berita::detail/$1');
-$routes->get('/adminlogin/login', 'Admin::index');
-$routes->get('/adminlogin/logout', 'HalamanUtama::index');
+$routes->get('profil/(:segment)', 'Profil::gambaran_umum/$1');
+// $routes->get('/adminlogin/login', 'Admin::index');
+// $routes->get('/adminlogin/logout', 'HalamanUtama::index');
 
 
 

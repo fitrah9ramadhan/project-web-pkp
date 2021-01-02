@@ -51,13 +51,14 @@ class AdminLogin extends BaseController
 	}
 
 	public function logout(){
-
-		$data = [
-			'title' => 'Halaman Utama'
-		];
 		session_destroy();
+		$data = [
+			'title' => 'Halaman Utama',
 
-		return view('pages/home', $data);
+		];
+		
+
+		return view('login/index', $data);
 	}
 }
 

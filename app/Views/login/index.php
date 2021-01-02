@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title><?= $title; ?></title>
-</head>
-<body>
+<?php echo $this->extend('layout/template'); ?>
 
-
-
+<?php echo $this->section('content'); ?>
 	<h1>Login Admin</h1>
 	<form action="/adminlogin/login" method="post">
 		<ul>
@@ -23,6 +17,6 @@
 			</li>
 		</ul>
 	</form>
+<a href="/">kembali</a>
 
-</body>
-</html>
+<?php echo $this->endSection(); ?>

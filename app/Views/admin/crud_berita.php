@@ -1,4 +1,4 @@
-<?php echo $this->extend('layout/template'); ?>
+<?php echo $this->extend('layout_dua/template'); ?>
 
 
 <?php $this->section('content'); ?>
