@@ -2,8 +2,9 @@
 
 <?php echo $this->section('content'); ?>
 
-<h1>Sejarah Kecamatan</h1>
+<div class="header-halaman"></div>
+    <h1>Sejarah Kecamatan</h1>
 
-<p><?php echo $profil_kecamatan['sejarah_kecamatan']; ?></p>
+    <p><?php echo $profil_kecamatan['sejarah_kecamatan']; ?></p>
 
 <?php echo $this->endSection(); ?>

@@ -145,17 +145,7 @@
 	</div>
 </div>
 
-<!-- Start Footer -->
 
-
-<div class="footer-ku">
-		<div class="isi-footer">
-			<div><p>Kantor Kecamatan Balocci</p></div>
-			<div><p>Kabupaten Pangkajene dan Kepulauan</p></div>
-			<div><p>Jalan Poros Tonasa No....., Kecamatan Balocci, Kabupaten Pangkajene dan Kepulauan </p></div>
-			<div><p>website: https://kecamatanbalocci.go.id/, Email:kecamatanbalocci@pangkep.go.id, Kode Pos: XXXX </p></div>
-		</div>
-</div>
 
 
 <?php echo $this->endSection(); ?>

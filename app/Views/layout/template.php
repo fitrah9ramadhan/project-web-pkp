@@ -33,16 +33,16 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="/">Beranda</a>
         </li>
-        <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Profil Kecamatan
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item text-black" href="profil/gambaran_umum">Gambaran Umum</a>
-            <a class="dropdown-item text-black" href="profil/sejarah_kecamatan">Sejarah</a>
-            <a class="dropdown-item text-black" href="profil/peta">Peta</a>
-          </div>
-        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profil Kecamatan
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-black" href="profil/gambaran_umum">Gambaran Umum</a>
+          <a class="dropdown-item text-black" href="profil/sejarah_kecamatan">Sejarah Kecamatan</a>
+          <a class="dropdown-item text-black" href="profil/peta">Peta Kecamatan</a>
+        </div>
+      </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="/berita">Berita</a>
         </li>
@@ -65,7 +65,17 @@
 
 <?php echo $this->renderSection('content'); ?>
   
+<!-- Start Footer -->
 
+
+<div class="footer-ku">
+		<div class="isi-footer">
+			<div><p>Kantor Kecamatan Balocci</p></div>
+			<div><p>Kabupaten Pangkajene dan Kepulauan</p></div>
+			<div><p>Jalan Poros Tonasa No....., Kecamatan Balocci, Kabupaten Pangkajene dan Kepulauan </p></div>
+			<div><p>website: https://kecamatanbalocci.go.id/, Email:kecamatanbalocci@pangkep.go.id, Kode Pos: XXXX </p></div>
+		</div>
+</div>
 
 <!-- Vendor Tampilan Fade -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -1,6 +1,8 @@
 <?php echo $this->extend('layout_dua/template'); ?>
 
 <?php echo $this->section('content'); ?>
+
+<div class="header-halaman"></div>
 <a href="/adminlogin/logout">Logout</a>
 
 <h1>Edit Kontak</h1>

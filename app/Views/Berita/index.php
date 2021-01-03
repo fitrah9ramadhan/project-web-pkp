@@ -2,26 +2,32 @@
 
 
 <?php $this->section('content'); ?>
+<div class="header-halaman" >
+	<div class="header-halaman-ku">
+		<h5>Berita</h5>
+	</div>
+	<div class="header-halaman-ku-right">
+		<a href="/"><h5>Beranda</h5></a>
+	</div>
+</div>
 
-<h1>Daftar Berita</h1>
-
-<div class="container-fluid" style="margin-top: 100px">
-	<table cellpadding="10" cellspacing="0" border="1">
-		<thead>
-			<tr>
-				<td>Sampul</td>
-				<td>Judul</td>
-			</tr>
-		</thead>
-		<tbody>
-			<?php foreach ($berita as $b): ?>
-			<tr>
-				<td><img src="/img/<?php echo $b['sampul']; ?>" width="300"></img></td>
-				<td><a href="/berita/<?php echo $b['id'] ?>"><?php echo $b['judul_berita']; ?></a></td>
-			</tr>
+<div class="berita-di-halaman container">
+	<div class="berita row" data-aos="zoom-in">
+			<?php foreach($berita as $brt): ?>
+			<div class="berita-terkini col-md-4 col-sm-12 col-xs-12">
+				<div class="row">
+					<div class="card" style="width: 18rem;">
+					  <img src="/img/<?= $brt['sampul']; ?>" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <a href="/berita/<?= $brt['id']; ?>"><h5 class="card-title" style="font-weight: bold;"><?= $brt['judul_berita']; ?></h5></a>
+					    <hr> 
+					    <p><small class="text-muted"><?= $brt['tanggal_berita']; ?></small></p>
+				  	  </div>
+					</div>
+				</div>
+			</div>
 			<?php endforeach; ?>
-		</tbody>
-	</table>
+	</div>
 </div>
 <?= $pager->links('berita', 'pagination_ku'); ?>
 

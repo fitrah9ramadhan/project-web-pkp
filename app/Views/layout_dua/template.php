@@ -4,6 +4,10 @@
 
     <!-- template_style -->
     <link rel="stylesheet" type="text/css" href="../template_style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
@@ -16,9 +20,8 @@
 
 </head>
 <body>
-
-<div class="container-fluid" id="navbar">
-  <nav class="navbar fixed-top navbar-expand-lg float-right">
+<div class="row container" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <!-- <a class="navbar-brand" href="/" style=" font-family: verdana;">
         KECAMATAN BALOCCI
     </a> -->
@@ -30,16 +33,18 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="/">Beranda</a>
         </li>
-        <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Profil Kecamatan
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item text-black" href="/profil/gambaran_umum">Gambaran Umum</a>
-            <a class="dropdown-item text-black" href="/profil/sejarah_kecamatan">Sejarah</a>
-            <a class="dropdown-item text-black" href="/profil/peta">Peta</a>
-          </div>
-        </li>
+        <div class="btn-group">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profil Kecamatan
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-black" href="gambaran_umum">Gambaran Umum</a>
+          <a class="dropdown-item text-black" href="profil/sejarah_kecamatan">Sejarah Kecamatan</a>
+          <a class="dropdown-item text-black" href="profil/peta">Peta Kecamatan</a>
+        </div>
+      </li>
+        </div>
         <li class="nav-item">
           <a class="nav-link text-white" href="/berita">Berita</a>
         </li>
@@ -50,7 +55,7 @@
           <a class="nav-link text-white" href="/hubungikami">Hubungi Kami</a>
         </li>
         <li>
-          <i class="fas fa-users-cog ml-3 mt-3 mr-1"></i>
+          <i class="fas fa-users-cog ml-3 mt-3 mr-1 bg-white"></i>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="/adminlogin">Login</a>
@@ -63,6 +68,17 @@
 <?php echo $this->renderSection('content'); ?>
   
 
+<!-- Start Footer -->
+
+
+<div class="footer-ku">
+		<div class="isi-footer">
+			<div><p>Kantor Kecamatan Balocci</p></div>
+			<div><p>Kabupaten Pangkajene dan Kepulauan</p></div>
+			<div><p>Jalan Poros Tonasa No....., Kecamatan Balocci, Kabupaten Pangkajene dan Kepulauan </p></div>
+			<div><p>website: https://kecamatanbalocci.go.id/, Email:kecamatanbalocci@pangkep.go.id, Kode Pos: XXXX </p></div>
+		</div>
+</div>
 
 <!-- Vendor Tampilan Fade -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

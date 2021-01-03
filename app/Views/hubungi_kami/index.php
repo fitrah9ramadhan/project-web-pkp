@@ -2,7 +2,7 @@
 
 <?php echo $this->section('content'); ?>
 
-
+<div class="header-halaman"></div>
 <h1>Hubungi Kami</h1>
 <?php foreach ($kontak as $k):?>
 	<p>Telpon: <?= $k['telefon']; ?></p>

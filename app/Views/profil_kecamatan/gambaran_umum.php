@@ -2,8 +2,9 @@
 
 <?php echo $this->section('content'); ?>
 
-<h1>Gambaran Umum</h1>
+<div class="header-halaman"></div>
+    <h1>Gambaran Umum</h1>
 
-<p><?php echo $profil_kecamatan['gambaran_umum']; ?></p>
+    <p><?php echo $profil_kecamatan['gambaran_umum']; ?></p>
 
 <?php echo  $this->endSection(); ?>

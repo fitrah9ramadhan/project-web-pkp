@@ -32,7 +32,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'HalamanUtama::index');
 $routes->get('/berita/(:segment)', 'Berita::detail/$1');
-$routes->get('profil/(:segment)', 'Profil::gambaran_umum/$1');
+$routes->addRedirect('profil/profil/sejarah_kecamatan', 'profil/sejarah_kecamatan');
+$routes->addRedirect('profil/profil/peta', 'profil/peta');
+// $routes->addRedirect('adminlogin/logout', '/');
+// $routes->get('profil/(:segment)', 'Profil::gambaran_umum/$1');
 // $routes->get('/adminlogin/login', 'Admin::index');
 // $routes->get('/adminlogin/logout', 'HalamanUtama::index');
 

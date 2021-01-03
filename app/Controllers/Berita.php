@@ -12,10 +12,8 @@ class Berita extends BaseController
 		$data = [
 
 			'title' => 'Berita | Kecamatan Balocci',
-			'berita' => $this->beritaModel->orderBy('id', 'desc')->paginate(3, 'berita'),
+			'berita' => $this->beritaModel->orderBy('id', 'desc')->paginate(9, 'berita'),
 			'pager' => $this->beritaModel->pager
-
-
 		];
 
 

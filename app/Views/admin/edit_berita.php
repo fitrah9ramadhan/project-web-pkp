@@ -2,6 +2,7 @@
 
 
 <?php $this->section('content'); ?>
+<div class="header-halaman"></div>
 <a href="/adminlogin/logout">Logout</a>
 <h4>Ubah Berita</h4>
 

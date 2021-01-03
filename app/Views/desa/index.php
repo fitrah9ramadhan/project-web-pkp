@@ -2,15 +2,28 @@
 
 <?php echo $this->section('content'); ?>
 
-<table cellpadding="10" cellspacing="0" border="1">
+<div class="header-halaman" >
+	<div class="header-halaman-ku">
+		<h5>Pemerintah Desa</h5>
+	</div>
+	<div class="header-halaman-ku-right">
+		<a href="/"><h5>Beranda</h5></a>
+	</div>
+</div>
+
+
+<div class="desa-ku container">
+	<table class="table">
 	<thead>
 		<tr>
-			<td>Nama Desa</td>
-			<td>Kepala Desa</td>
-			<td>Masa Kerja</td>
-			<td>Luas Desa</td>
-			<td>Jumlah Penduduk</td>
-			<td>Dusun/RT/RW</td>
+		<th scope="col">Nama Desa</th>
+		<th scope="col">Kepala Desa</th>
+		<th scope="col">Masa Kerja</th>
+		<th scope="col">Luas Daerah</th>
+		<th scope="col">Jumlah Penduduk</th>
+		<th scope="col">Dusun/RW/RT</th>
+		
+
 		</tr>
 	</thead>
 	<?php foreach ($pemdes as $pds): ?>
@@ -37,8 +50,9 @@
 		</tr>
 	</tbody>
 	<?php endforeach; ?>
-</table>
+	</table>
+</div>
 
-
+<br><br><br><br><br><br><br><br><br>
 
 <?php $this->endSection(); ?>

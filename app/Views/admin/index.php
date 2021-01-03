@@ -2,8 +2,8 @@
 
 <?php echo $this->section('content'); ?>
 
-
-<div class="container-fluid" style="margin-top: 200px;">
+<div class="header-halaman"></div>
+<div class="container-fluid">
 	<a class= "btn btn-danger" href="/adminlogin/logout">Logout</a>
 	<h1>Options</h1>
 	<a href="/admin/crud_berita">CRUD Berita</a>

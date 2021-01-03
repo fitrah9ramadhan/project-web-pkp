@@ -2,10 +2,11 @@
 
 
 <?php $this->section('content'); ?>
-<div class="container-fluid" style="margin-top: 200px;">
+<div class="header-halaman"></div>
+<div class="container-fluid">
 <a href="/adminlogin/logout">Logout</a>
 <h4><a href="/admin/tambah_berita">Tambah Berita</a></h4>
-<table cellpadding="10" cellspacing="0" border="1">
+<table cellpadding="10" cellspacing="0">
 		<thead>
 			<tr>
 				<td>Aksi</td>
