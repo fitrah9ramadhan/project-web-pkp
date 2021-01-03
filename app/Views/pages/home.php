@@ -65,13 +65,13 @@
 	</div>
 </div>
 <!-- End Selamat Datang -->
-<div class="selamat-datang-dua row container-fluid">
-	<div class="judul-selamat-datang-dua row container" data-aos = "fade-down">
-		<div class="row">
+<div class="selamat-datang-dua container-fluid">
+	<div class="judul-selamat-datang-dua row container">
+		<div class="row"  data-aos = "fade-down">
 			<h3>Pemerintah Kecamatan Balocci</h3>
 		</div>
-		<div class="garis"></div>
-		<div class="paragraf-selamat-datang-dua row">
+		<div class="garis" data-aos = "fade-down"></div>
+		<div class="paragraf-selamat-datang-dua row" data-aos = "zoom-in">
 			<p class="ml14v2">
 				<span class="text-wrapper">
 					<span class="letters">
@@ -89,7 +89,7 @@
 <div class="konten-satu">
 	<div class="container">
 		<div class="judul-besar row" data-aos="fade-down">
-			<div><h5>Informasi Teraktual</h5></div>
+			<div><h5 class="text-muted">Informasi Teraktual</h5></div>
 			<div><h2>Berita Terkini</h2></div>
 			<div class="garis"></div>
 		</div>
@@ -100,9 +100,8 @@
 					<div class="card" style="width: 18rem;">
 					  <img src="/img/<?= $brt['sampul']; ?>" class="card-img-top" alt="...">
 					  <div class="card-body">
-					    <h5 class="card-title"><?= $brt['judul_berita']; ?></h5>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <hr>
+					    <a href="/berita/<?= $brt['id']; ?>"><h5 class="card-title" style="font-weight: bold;"><?= $brt['judul_berita']; ?></h5></a>
+					    <hr> 
 					    <p><small class="text-muted"><?= $brt['tanggal_berita']; ?></small></p>
 				  	  </div>
 					</div>
@@ -120,33 +119,43 @@
 	</div>
 </div>
 
+<div class="konten-dua">
+	<div class="konten-dua-isi container-fluid" data-aos="zoom-in">
+		<div class="judul-besar row" data-aos="fade-down">
+			<div><h5 class="text-muted">Camat dan Sekrtaris Camat</h5></div>
+			<div><h2>Visi dan Misi Kecamatan Balocci</h2></div>
+			<div class="garis"></div>
+		</div>
+		<div class="row">
+			<div class="camat col-md-3">
+				<div class="gambar-camat">
+					<img src="/img/camat/<?= $camat['gambar_camat'];?>" class="rounded-circle" style="width: 18rem;">
+				</div>
+				
+			</div>
+			<div class="visi-misi col-md-6">
+				<div class="visi-misi-camat">
+					<h3>Menjadi Kecamatan terbaik se Kabupaten Pangkep</h3>
+				</div>	
+			</div>
+			<div class="sekcam col-md-3">
+				<img src="img/sekcam/<?= $camat['gambar_sekcam']; ?>" class="rounded-circle" style="width: 18rem;">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Start Footer -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<div class="footer-ku">
+		<div class="isi-footer">
+			<div><p>Kantor Kecamatan Balocci</p></div>
+			<div><p>Kabupaten Pangkajene dan Kepulauan</p></div>
+			<div><p>Jalan Poros Tonasa No....., Kecamatan Balocci, Kabupaten Pangkajene dan Kepulauan </p></div>
+			<div><p>website: https://kecamatanbalocci.go.id/, Email:kecamatanbalocci@pangkep.go.id, Kode Pos: XXXX </p></div>
+		</div>
+</div>
 
 
 <?php echo $this->endSection(); ?>

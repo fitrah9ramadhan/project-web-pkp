@@ -16,7 +16,6 @@ class HalamanUtama extends BaseController
 
 		];
 
-
 		return view('pages/home', $data);
 	}
 }

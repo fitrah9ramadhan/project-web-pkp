@@ -4,6 +4,10 @@
 
     <!-- template_style -->
     <link rel="stylesheet" type="text/css" href="template_style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
@@ -16,9 +20,8 @@
 
 </head>
 <body>
-
-<div class="container-fluid" id="navbar">
-  <nav class="navbar fixed-top navbar-expand-lg float-right">
+<div class="row container" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <!-- <a class="navbar-brand" href="/" style=" font-family: verdana;">
         KECAMATAN BALOCCI
     </a> -->

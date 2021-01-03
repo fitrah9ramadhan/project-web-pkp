@@ -1,7 +1,7 @@
 .navbar {
 	background-color: #f6a607;
+	font-family: 'Monsterrat', sans-serif;
 }
-
 
 
 .my-carousel img {
@@ -19,7 +19,8 @@
 	transform-origin: left;
 }
 
-.ml10, .ml10v2, .ml10v3 {
+.ml10 {
+  font-family: 'Open Sans', sans-serif;
   position: relative;
   font-weight: 900;
   font-size: 59px;
@@ -66,6 +67,7 @@
 }
 
 .selamat-datang {
+	font-family: 'Open Sans', sans-serif;
 	background-color: #4c1a1b;
 	height: 75px;
 	display: flex;
@@ -75,13 +77,14 @@
 }
 
 .judul-selamat-datang{
+	font-family: 'Open Sans', sans-serif;
 	margin: auto;
 	display: flex;
 }
 
 .judul-selamat-datang h6 {
 	color: white;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .selamat-datang-dua {
@@ -111,8 +114,7 @@
 }
 
 .judul-selamat-datang-dua h3 {
-	display: flex;
-	/*font-family: sans-serif;*/
+	display: flex;/
 	color: white;
 	text-align: center;
 }
@@ -120,6 +122,7 @@
 .judul-selamat-datang-dua .garis{
 	height: 4px;
 	width: 100px;
+	margin-top: 10px;
 	background-color: #4c1a1b;
 	margin-bottom: 30px;
 }
@@ -139,6 +142,7 @@
 
 
 .konten-satu{
+	font-family: 'Open Sans', sans-serif;
 	background-color: #f6a607;
 	padding: 50px;
 }
@@ -183,8 +187,57 @@
 	text-align: center;
 }
 
-/*.berita {
+.konten-dua {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(/img/hero2.jpg);
+	padding: 50px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.gambar-camat {
+	display: flex;
+}
+
+.visi-misi{
+	padding: 50px;
+	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	align-content: center;
-}*/
+}
+
+.visi-misi h3 {
+	text-align: center;
+}
+
+.visi-misi img{
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.footer-ku {
+	background-color: lightgrey;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+
+}
+
+.isi-footer {
+	margin: 50px auto;
+	box-sizing: border-box;
+}
+
+.isi-footer p {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0;
+
+}
