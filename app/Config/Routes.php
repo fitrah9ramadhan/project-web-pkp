@@ -34,6 +34,7 @@ $routes->get('/', 'HalamanUtama::index');
 $routes->get('/berita/(:segment)', 'Berita::detail/$1');
 $routes->addRedirect('profil/profil/sejarah_kecamatan', 'profil/sejarah_kecamatan');
 $routes->addRedirect('profil/profil/peta', 'profil/peta');
+$routes->addRedirect('adminlogin/halamanutama/index', '/');
 // $routes->addRedirect('adminlogin/logout', '/');
 // $routes->get('profil/(:segment)', 'Profil::gambaran_umum/$1');
 // $routes->get('/adminlogin/login', 'Admin::index');

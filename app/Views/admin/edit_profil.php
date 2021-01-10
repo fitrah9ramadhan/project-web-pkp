@@ -1,4 +1,4 @@
-<?php $this->extend('layout_dua/template'); ?>
+<?php echo $this->extend('layout_admin/template'); ?>
 
 <?php $this->section('content'); ?>
 <div class="header-halaman"></div>

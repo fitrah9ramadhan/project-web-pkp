@@ -51,6 +51,7 @@ class AdminLogin extends BaseController
 	}
 
 	public function logout(){
+
 		session_destroy();
 		$data = [
 			'title' => 'Halaman Utama',
@@ -58,7 +59,7 @@ class AdminLogin extends BaseController
 		];
 		
 
-		return view('login/index', $data);
+		return redirect()->to('halamanutama/index');
 	}
 }
 

@@ -54,6 +54,15 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="/hubungikami">Hubungi Kami</a>
         </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Wisata
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-black" href="#">Wisata Budaya</a>
+          <a class="dropdown-item text-black" href="#">Objek Wisata</a>
+        </div>
+      </li>
         <li>
           <i class="fas fa-users-cog ml-3 mt-3 mr-1 bg-white"></i>
         </li>
